@@ -1,0 +1,285 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baskervvile', serif;
+}
+
+.main-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.ht-btn {
+    font-family: 'Circular Std', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #602C21;
+    border: none;
+    line-height: 23px;
+    padding: 8px 25px;
+    font-weight: 500;
+}
+
+/*==========================
+Restaurant Section 
+============================*/
+.restaurant {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 170px;
+}
+
+.restaurant .restaurant-text {
+    max-width: 430px;
+}
+
+.restaurant-text .title {
+    color: #333333;
+    font-size: 78px;
+    line-height: 89px;
+    font-weight: lighter;
+}
+
+.restaurant-text .text {
+    font-size: 24px;
+    color: #333333;
+    line-height: 147.4%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.restaurant .restaurant-img {
+    max-width: 700px;
+}
+
+.restaurant-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*=======================
+GROUPED SERVICES
+=========================*/
+
+.grouped-services {
+    background-image: linear-gradient(to right ,rgba(189, 189, 189, 0.308) 55%, #FFFFFF 50%);
+    width: 100%;
+    margin: 170px auto 0;
+    padding: 5% 6%;
+}
+
+/*=============================
+LAUNDRY
+===============================*/
+
+.grouped-services .laundry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.laundry .laundry-text {
+    max-width: 430px;
+}
+
+.laundry-text .title {
+    color: #333333;
+    font-size: 60px;
+    line-height: 89px;
+    font-weight: lighter;
+}
+
+.laundry-text .text {
+    color: #333333;
+    font-size: 24px;
+    line-height: 147.4%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.laundry .laundry-img {
+    max-width: 700px;
+}
+
+.laundry-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*======================
+ HALL
+*======================*/
+.grouped-services .hall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 170px;
+}
+
+.hall .hall-text {
+    max-width: 450px;
+}
+
+.hall-text .title {
+    color: #333333;
+    font-size: 60px;
+    line-height: 89px;
+    font-weight: lighter; 
+}
+
+.hall-text .text {
+    color: #333333;
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hall .hall-img {
+    max-width: 720px;
+    width: 100%;
+}
+
+.hall-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*======================
+INTERNET 
+========================*/
+
+.grouped-services .internet {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-top: 170px;
+    height: 450px;
+}
+
+.internet .internet-text {
+    background-color: #FFFFFF;
+    position: absolute;
+    max-width: 715px;
+    top: 30%;
+    left: 3%;
+    padding: 65px 108px;
+    z-index: 1;
+    box-shadow: 1.01418px 5.07092px 30.4255px rgba(0, 0, 0, 0.12);
+}
+
+.internet-text .title {
+    color: #333333;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: lighter;
+}
+
+.internet-text .text {
+    color: #333333;
+    font-size: 24px;
+    line-height: 145%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.internet .internet-img {
+    max-width: 800px;
+   /* position: absolute;*/
+}
+
+.internet-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*===================================
+CARE/BEAUTIFUL NIGHT SECTION STYLES
+=================================*/
+
+.care {
+    margin-top: 250px;
+}
+
+.care .care-title {
+    background-color: #602C21;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 11%;
+}
+
+.care-title .heading {
+    font-size: 78px;
+    line-height: 89px;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.care .care-img {
+    background-image: url("imgs/palm-trees-at-night-258154 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.care-img .heading {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-size: 118.808px;
+    line-height: 136px;
+    font-weight: lighter;
+    padding: 40% 10% 17%;
+}
+
+@media only screen and (max-width: 1195px) {
+    .care-title .heading {
+        font-size: 58px;
+    }    
+}
+@media only screen and (max-width: 890px) {
+    .care-title .heading {
+        font-size: 38px;
+    }    
+}
+
+@media only screen and (max-width: 584px) {
+    .care-title .heading {
+        font-size: 28px;
+    }    
+}
+@media only screen and (max-width: 769px) {
+    .care-img .heading {
+        font-size: 80px;
+        line-height: 100px;
+    }    
+}
+@media only screen and (max-width: 500px) {
+    .care-img .heading {
+        font-size: 60px;
+        line-height: 80px;
+    }    
+}
+@media only screen and (max-width: 936px) {
+    .internet .internet-text {
+        position: relative;
+        max-width: 515px;
+        padding: 45px 68px;
+        z-index: 1;
+        box-shadow: 1.01418px 5.07092px 30.4255px rgba(0, 0, 0, 0.12);
+    }
+      
+}
