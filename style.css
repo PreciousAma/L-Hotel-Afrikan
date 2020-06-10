@@ -6,13 +6,16 @@
     font-family: 'Baskervvile', serif;
 }
 
-.main-wrapper {
+.container-fluid {
     max-width: 1440px;
-    margin: 0 auto;
+    padding: 0 !important;
 }
 
 .section-container {
     max-width: 1300px;
+}
+
+.section-container.row {
     margin: 0 auto;
 }
 
@@ -31,14 +34,14 @@
 Restaurant Section 
 ============================*/
 .restaurant {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 170px;
 }
 
 .restaurant .restaurant-text {
-    max-width: 430px;
+    /*max-width: 430px;*/
 }
 
 .restaurant-text .title {
@@ -57,13 +60,13 @@ Restaurant Section
 }
 
 .restaurant .restaurant-img {
-    max-width: 700px;
+    /* max-width: 700px; */
 }
 
 .restaurant-img img {
-    width: 100%;
+    /* width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: contain; */
 }
 
 /*=======================
@@ -82,14 +85,14 @@ LAUNDRY
 ===============================*/
 
 .grouped-services .laundry {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
 }
 
 .laundry .laundry-text {
-    max-width: 430px;
+    /* max-width: 430px; */
 }
 
 .laundry-text .title {
@@ -108,27 +111,27 @@ LAUNDRY
 }
 
 .laundry .laundry-img {
-    max-width: 700px;
+    /* max-width: 700px; */
 }
 
 .laundry-img img {
-    width: 100%;
+    /* width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: contain; */
 }
 
 /*======================
  HALL
 *======================*/
 .grouped-services .hall {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 170px;
 }
 
 .hall .hall-text {
-    max-width: 450px;
+    /* max-width: 450px; */
 }
 
 .hall-text .title {
@@ -147,14 +150,14 @@ LAUNDRY
 }
 
 .hall .hall-img {
-    max-width: 720px;
+    /* max-width: 720px; */
     width: 100%;
 }
 
 .hall-img img {
-    width: 100%;
+    /* width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: contain; */
 }
 
 /*======================
@@ -162,21 +165,22 @@ INTERNET
 ========================*/
 
 .grouped-services .internet {
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
+    /* display: flex; */
+    /* position: relative; */
+    /* justify-content: flex-end; */
     margin-top: 170px;
     height: 450px;
 }
 
 .internet .internet-text {
     background-color: #FFFFFF;
-    position: absolute;
-    max-width: 715px;
-    top: 30%;
-    left: 3%;
-    padding: 65px 108px;
-    z-index: 1;
+    /* position: absolute; */
+    /* max-width: 715px; */
+    top: 24%; 
+    /* left: 3%; */
+    padding: 60px 150px 60px 95px;
+    z-index: 1; 
+    align-self: center;
     box-shadow: 1.01418px 5.07092px 30.4255px rgba(0, 0, 0, 0.12);
 }
 
@@ -196,14 +200,14 @@ INTERNET
 }
 
 .internet .internet-img {
-    max-width: 800px;
+    /* max-width: 800px; */
    /* position: absolute;*/
 }
 
 .internet-img img {
-    width: 100%;
+    /* width: 100%; 
     height: auto;
-    object-fit: contain;
+    object-fit: contain; */
 }
 
 /*===================================
@@ -261,6 +265,16 @@ CARE/BEAUTIFUL NIGHT SECTION STYLES
         font-size: 28px;
     }    
 }
+@media only screen and (max-width: 430px) {
+    .care-title .heading {
+        font-size: 20px;
+    } 
+
+    .restaurant-text .title {
+        font-size: 58px;
+        line-height: 79px;
+    }
+}       
 @media only screen and (max-width: 769px) {
     .care-img .heading {
         font-size: 80px;
@@ -273,13 +287,18 @@ CARE/BEAUTIFUL NIGHT SECTION STYLES
         line-height: 80px;
     }    
 }
+
 @media only screen and (max-width: 936px) {
     .internet .internet-text {
         position: relative;
-        max-width: 515px;
+        /* max-width: 515px; */
         padding: 45px 68px;
-        z-index: 1;
-        box-shadow: 1.01418px 5.07092px 30.4255px rgba(0, 0, 0, 0.12);
-    }
+    }    
       
+}
+@media only screen and (max-width: 767px) {
+    .grouped-services {
+        background-image: linear-gradient(to right ,rgba(189, 189, 189, 0.308) 100%, #FFFFFF 0%);
+        
+    }
 }
