@@ -6,11 +6,6 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 
-p {
-  font-size: 24px;
-  line-height: 147.4%;
-}
-
 .btn-primary {
   color: #fff;
   background-color: #602C21;
@@ -25,4 +20,15 @@ p {
 
 .btn {
   border-radius: 0px;
+}
+
+.facility-heading {
+  font-size: 35px;
+  line-height: 89px;
+  color: #333333;
+}
+
+p {
+  font-size: 15px;
+ line-height: 25px;
 }
