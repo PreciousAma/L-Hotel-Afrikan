@@ -32,3 +32,36 @@ p {
   font-size: 15px;
  line-height: 25px;
 }
+
+.facility {
+  min-height: 200px;
+}
+
+.facility-tagline {
+  font-size: 40px;
+line-height: 25px;
+text-align: center;
+text-transform: capitalize;
+}
+
+.img-container {
+  position: relative;
+  font-family: Arial;
+}
+
+.overlay {
+  position: absolute;
+  /* bottom: 20px; */
+  left: 20px;
+  top: 50rem;
+  background-color: #00000059;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.overlay h4 {
+  font-size: 70px;
+text-align: justify;
+text-transform: capitalize;
+}
