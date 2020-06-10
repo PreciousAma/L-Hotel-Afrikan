@@ -44,6 +44,17 @@ text-align: center;
 text-transform: capitalize;
 }
 
+.facility-tagline .jumbotron {
+  margin-bottom: 0rem;
+  background-color: inherit;
+  border-radius: 0rem;
+}
+
+.facility-divider {
+  margin-bottom: 4rem;
+  border-top: 0px;
+}
+
 .img-container {
   position: relative;
   font-family: Arial;
