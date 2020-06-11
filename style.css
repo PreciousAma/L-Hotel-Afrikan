@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Baskervvile', serif;
+    font-family: 'Baskervville', serif;
 }
 
 .container-fluid {
@@ -16,7 +16,8 @@
 }
 
 .section-container.row {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ht-btn {
@@ -34,14 +35,9 @@
 Restaurant Section 
 ============================*/
 .restaurant {
-    /*display: flex;*/
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 170px;
-}
-
-.restaurant .restaurant-text {
-    /*max-width: 430px;*/
+    margin-top: 120px;
 }
 
 .restaurant-text .title {
@@ -59,15 +55,6 @@ Restaurant Section
     margin-bottom: 25px;
 }
 
-.restaurant .restaurant-img {
-    /* max-width: 700px; */
-}
-
-.restaurant-img img {
-    /* width: 100%;
-    height: auto;
-    object-fit: contain; */
-}
 
 /*=======================
 GROUPED SERVICES
@@ -76,23 +63,19 @@ GROUPED SERVICES
 .grouped-services {
     background-image: linear-gradient(to right ,rgba(189, 189, 189, 0.308) 55%, #FFFFFF 50%);
     width: 100%;
-    margin: 170px auto 0;
-    padding: 5% 6%;
+    margin: 120px auto 0;
+    padding: 7% 0%;
 }
+
 
 /*=============================
 LAUNDRY
 ===============================*/
 
 .grouped-services .laundry {
-    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-}
-
-.laundry .laundry-text {
-    /* max-width: 430px; */
 }
 
 .laundry-text .title {
@@ -110,28 +93,15 @@ LAUNDRY
     margin-bottom: 25px;
 }
 
-.laundry .laundry-img {
-    /* max-width: 700px; */
-}
-
-.laundry-img img {
-    /* width: 100%;
-    height: auto;
-    object-fit: contain; */
-}
 
 /*======================
  HALL
 *======================*/
+
 .grouped-services .hall {
-    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 170px;
-}
-
-.hall .hall-text {
-    /* max-width: 450px; */
 }
 
 .hall-text .title {
@@ -150,34 +120,25 @@ LAUNDRY
 }
 
 .hall .hall-img {
-    /* max-width: 720px; */
     width: 100%;
 }
 
-.hall-img img {
-    /* width: 100%;
-    height: auto;
-    object-fit: contain; */
-}
 
 /*======================
 INTERNET 
 ========================*/
 
 .grouped-services .internet {
-    /* display: flex; */
-    /* position: relative; */
-    /* justify-content: flex-end; */
-    margin-top: 170px;
+    margin-top: 150px;
     height: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .internet .internet-text {
     background-color: #FFFFFF;
-    /* position: absolute; */
-    /* max-width: 715px; */
-    top: 24%; 
-    /* left: 3%; */
+    position: absolute;
+    top: 32%; 
     padding: 60px 150px 60px 95px;
     z-index: 1; 
     align-self: center;
@@ -199,16 +160,6 @@ INTERNET
     margin-top: 25px;
 }
 
-.internet .internet-img {
-    /* max-width: 800px; */
-   /* position: absolute;*/
-}
-
-.internet-img img {
-    /* width: 100%; 
-    height: auto;
-    object-fit: contain; */
-}
 
 /*===================================
 CARE/BEAUTIFUL NIGHT SECTION STYLES
@@ -227,10 +178,11 @@ CARE/BEAUTIFUL NIGHT SECTION STYLES
 }
 
 .care-title .heading {
-    font-size: 78px;
+    font-size: 76px;
     line-height: 89px;
     font-weight: lighter;
     color: #FFFFFF;
+    margin-bottom: 0;
 }
 
 .care .care-img {
@@ -249,23 +201,142 @@ CARE/BEAUTIFUL NIGHT SECTION STYLES
     padding: 40% 10% 17%;
 }
 
+/* =========================
+MEDIA QUERY
+===========================*/
+
+@media only screen and (max-width: 1280px) {    
+    .care-title .heading {
+        font-size: 70px;
+    }
+}
+
 @media only screen and (max-width: 1195px) {
     .care-title .heading {
-        font-size: 58px;
-    }    
+        font-size: 55px;
+    }
+
+    .internet .internet-text {
+        padding: 45px 68px;
+    }  
 }
-@media only screen and (max-width: 890px) {
+
+@media only screen and (max-width: 965px) {
+    .restaurant-text .title,
+    .laundry-text .title {
+        font-size: 65px;
+        margin-bottom: 0;
+    }
+
+    .restaurant-text .text,
+    .laundry-text .text {
+        font-size: 20px;
+        line-height: 145%;
+        margin-top: 0;
+        margin-bottom: 10px;
+    } 
+    
+    .hall-text .title {
+        font-size: 52px;
+        line-height: 55px;
+        margin-bottom: 0px;
+    }
+
+    .hall-text .text {
+        font-size: 19px;
+        line-height: 35px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .internet .internet-text {
+        padding: 45px 28px;
+    }
+
+    .internet-text .title {
+        font-size: 42px;
+        margin-bottom: 0px;
+    }
+
+    .internet-text .text {
+        font-size: 20px;
+        line-height: 145%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    
     .care-title .heading {
-        font-size: 38px;
-    }    
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:905px) {
+    .care-title .heading {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .grouped-services {
+        background-image: linear-gradient(to right ,rgba(189, 189, 189, 0.308) 100%, #FFFFFF 0%);
+        padding-top: 5px;
+        padding-bottom: 0px;
+        margin-top: 120px;
+    }
+
+    .internet .internet-text {
+        top: 0;
+        width: 95%;
+    }
+
+    .care .care-title {
+        padding: 5%;
+    }
+    
+    .care-title .heading {
+        font-size: 34px;
+    }
+
+    .care-img .heading {
+        font-size: 80px;
+        line-height: 100px;
+    }
+    
+    .care {
+        margin-top: 120px;
+    }
+
+    .restaurant, 
+    .grouped-services .hall,
+    .grouped-services .internet {
+        margin-top: 100px;
+    }
+
+    .grouped-services .laundry {
+        margin-top: 50px;
+    }
+
+    .section-container.row {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 }
 
 @media only screen and (max-width: 584px) {
     .care-title .heading {
-        font-size: 28px;
+        font-size: 25px;
     }    
 }
-@media only screen and (max-width: 430px) {
+
+@media only screen and (max-width: 500px) {
+    .care-img .heading {
+        font-size: 60px;
+        line-height: 80px;
+    }    
+}
+
+@media only screen and (max-width: 436px) {
     .care-title .heading {
         font-size: 20px;
     } 
@@ -274,31 +345,5 @@ CARE/BEAUTIFUL NIGHT SECTION STYLES
         font-size: 58px;
         line-height: 79px;
     }
-}       
-@media only screen and (max-width: 769px) {
-    .care-img .heading {
-        font-size: 80px;
-        line-height: 100px;
-    }    
-}
-@media only screen and (max-width: 500px) {
-    .care-img .heading {
-        font-size: 60px;
-        line-height: 80px;
-    }    
-}
+} 
 
-@media only screen and (max-width: 936px) {
-    .internet .internet-text {
-        position: relative;
-        /* max-width: 515px; */
-        padding: 45px 68px;
-    }    
-      
-}
-@media only screen and (max-width: 767px) {
-    .grouped-services {
-        background-image: linear-gradient(to right ,rgba(189, 189, 189, 0.308) 100%, #FFFFFF 0%);
-        
-    }
-}
